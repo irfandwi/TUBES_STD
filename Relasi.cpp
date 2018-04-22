@@ -110,6 +110,54 @@ void DeletePotensiInList(List_Relasi &L , adrPotensi P ){
     }
 
 }
+
+
+adrDaerah getTerkaya(List_Relasi L , List_Daerah D){
+
+    int pKaya = -1;
+    adrDaerah Cari = NULL;
+    adrDaerah P = First(D);
+    while( P != NULL ){
+        int kekayaan = getKekayaan(L , P);
+        if( Cari == NULL || kekayaan > pKaya){
+            pKaya = kekayaan;
+            Cari = P;
+        }
+        P = Next(P);
+    }
+    return Cari;
+
+}
+
+adrDaerah getTermiskin(List_Relasi L , List_Daerah D){
+
+    int pKaya = -1;
+    adrDaerah Cari = NULL;
+    adrDaerah P = First(D);
+    while( P != NULL ){
+        int kekayaan = getKekayaan(L , P);
+        if( Cari == NULL || kekayaan < pKaya){
+            pKaya = kekayaan;
+            Cari = P;
+        }
+        P = Next(P);
+    }
+    return Cari;
+
+}
+
+int getKekayaan(List_Relasi L , adrDaerah D){
+    int kekayaan = 0;
+    adrRelasi p = First(L);
+    while(p != NULL){
+        if(Rdaerah(p) == D){
+            kekayaan += Info(Rpotensi(p)).Penghasilan;
+        }
+        p = Next(p);
+    }
+    return kekayaan;
+
+}
 //BARU SAMPAI SINI!!!!!!!!!!!!!!!!!!!!__-------------------------------------------------------------------------
 
 

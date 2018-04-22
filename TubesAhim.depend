@@ -30,3 +30,31 @@
 	"DataDaerah.h"
 	"Relasi.h"
 
+1524408528 source:d:\diske\kuliah\github\irfan\daerah.cpp
+	"Daerah.h"
+	"Relasi.h"
+
+1524408528 d:\diske\kuliah\github\irfan\daerah.h
+	"DataDaerah.h"
+
+1524408528 d:\diske\kuliah\github\irfan\datadaerah.h
+	<iostream>
+
+1524408528 d:\diske\kuliah\github\irfan\relasi.h
+	"DataDaerah.h"
+
+1524408528 source:d:\diske\kuliah\github\irfan\datadaerah.cpp
+	"DataDaerah.h"
+	"Relasi.h"
+
+1524408528 source:d:\diske\kuliah\github\irfan\main.cpp
+	<cstdlib>
+	<iostream>
+
+1524408528 source:d:\diske\kuliah\github\irfan\potensi.cpp
+	"Potensi.h"
+
+1524408528 d:\diske\kuliah\github\irfan\potensi.h
+	"DataDaerah.h"
+	"Relasi.h"
+
