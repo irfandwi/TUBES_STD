@@ -87,7 +87,7 @@ void addPotensi(List_Potensi &L){
     char tambah='Y';
     cout<<" Menu Tambah Potensi"<<endl;
     do{
-        cout<<" Masukan Sumberdaya Daerah : ";cin>>Sumberdaya;
+        cout<<" Masukan Sumberdaya Daerah : ";cin>>SumberDaya;
         cout<<" Masukan Penghasilan Daerah : ";cin>>Penghasilan;
         adrPotensi P = FindPotensi(L , SumberDaya);
         if (P == NULL) {

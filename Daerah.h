@@ -7,7 +7,7 @@ void InsertLast_Daerah(List_Daerah &L , adrRelasi P);
 void DealocateDaerah(adrDaerah &P);
 void Delete_Daerah(List_Daerah &L1 , List_Relasi &L2, adrDaerah &P);
 adrDaerah FindDaerah(List_Daerah L , string Nama);
-
+void PrintDaerah(List_Daerah L);
 
 
 #endif // DAERAH_H_INCLUDED

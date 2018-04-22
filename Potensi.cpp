@@ -39,14 +39,13 @@ void PrintPotensi(List_Potensi L){
 
     if(First(L) != NULL){
         adrPotensi p = First(L);
-
+        int i = 1;
         do{
-
-            cout<<" "<<endl;
-            adrPotensi p = Next(p);
+            cout<<i++<<" "<<Info(p).SumberDaya<<endl;
+            cout<<"  "<<Info(p).Penghasilan<<endl;
+            p = Next(p);
         }while(p != First(L));
-            cout<<Info(P).SumberDaya<<endl;
-            cout<<Info(P).Penghasilan<<endl;
+
 
     }
 
