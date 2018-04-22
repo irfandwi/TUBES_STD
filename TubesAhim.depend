@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1524389743 source:d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\main.cpp
+	<cstdlib>
+	<iostream>
+
+1524404315 source:d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\daerah.cpp
+	"Daerah.h"
+	"Relasi.h"
+
+1522729570 d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\daerah.h
+	"DataDaerah.h"
+
+1524402277 d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\datadaerah.h
+	<iostream>
+
+1524326273 d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\relasi.h
+	"DataDaerah.h"
+
+1524327152 source:d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\potensi.cpp
+	"Potensi.h"
+
+1524326726 d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\potensi.h
+	"DataDaerah.h"
+	"Relasi.h"
+
+1524386917 source:d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\relasi.cpp
+	"Relasi.h"
+
+1524387590 source:d:\#telkomuniversity if-41-11\semester 2\struktur data\tubesahim\datadaerah.cpp
+	"DataDaerah.h"
+	"Relasi.h"
+
