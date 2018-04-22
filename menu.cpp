@@ -12,11 +12,13 @@ void menu(int &ans){
     cout << " 2.  Hapus Kota" <<endl;
     cout << " 3.  Tambah Jalan" <<endl;
     cout << " 4.  Hapus Jalan" <<endl;
-    cout << " 5.  Tampilkan Seluruh Data Daerah Beserta Potensinya" <<endl;
-    cout << " 6.  Tampilkan Data Daerah Dengan Potensi Tertentu" <<endl;
-    cout << " 7.  Tampilkan Data Potensi Dengan Daerah Tertentu" <<endl;
-    cout << " 8.  Tampilkan Data Daerah Yang Paling Kaya Dan Miskin" <<endl;
-    cout << " 9.  Exit" <<endl;
+    cout << " 5.  Sambungkan Potensi Ke Daerah" <<endl;
+    cout << " 6.  Smabungkan Daerah Ke Potensi" <<endl;
+    cout << " 7.  Tampilkan Seluruh Data Daerah Beserta Potensinya" <<endl;
+    cout << " 8.  Tampilkan Data Daerah Dengan Potensi Tertentu" <<endl;
+    cout << " 9.  Tampilkan Data Potensi Dengan Daerah Tertentu" <<endl;
+    cout << " 10. Tampilkan Data Daerah Yang Paling Kaya Dan Miskin" <<endl;
+    cout << " 11. Exit" <<endl;
 
     do{
         cout << " Pilih Menu : "; cin>>ans;
@@ -144,21 +146,21 @@ void menuOutputPotensi(List_Potensi J){
 
 
 //tambah jalan ke kota menu 5
-void menuTambahJalanKeKota(doubleList K, singgleList J, circularList &R){
-    string namajln;
-    string namakota;
+void menuSambungPotensiKeDaerah(List_Daerah K, List_Potensi J, List_Relasi &R){
+    string SumberDaya;
+    string namaDaerah;
     char tambah='Y';
-    if(isEmpty(J)==false&&isEmpty(K)==false){
-        cout<<" Tambah jalan ke kota"<<endl;
+    if(First(J) != NULL && First(K) != NULL){
+        cout<<" Sambungkan Potensi Ke Daerah"<<endl;
         do{
             char tl;//tampil semua list
             cout<< " Tampilkan List jalan dan List Kota [Y/T] : ";cin>>tl;
             if(tl=='y'||tl=='Y'){
-                cout<<endl<< " List Jalan : "<<endl;
-                printDataJalan(J);
+                cout<<endl<< " List Potensi : "<<endl;
+                PrintPotensi(J);
                 cout<<endl<<"--------------------------------------------------------------"<<endl;
-                cout<< " List Kota : "<<endl;
-                printDataKota(K);
+                cout<< " List Daerah : "<<endl;
+                PrintDaerah(K);
                 cout<<endl;
             }
             cout<<" Masukan Nama Jalan : ";cin>>namajln;

@@ -43,7 +43,7 @@ void PrintPotensi(List_Potensi L){
         do{
 
             cout<<" "<<endl;
-            p = Next(p);
+            adrPotensi p = Next(p);
         }while(p != First(L));
             cout<<Info(P).SumberDaya<<endl;
             cout<<Info(P).Penghasilan<<endl;

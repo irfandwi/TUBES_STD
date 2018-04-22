@@ -16,6 +16,10 @@ adrRelasi SearchDaerahPotensi(List_Relasi L , adrDaerah Dae , adrPotensi Pot);
 void DeleteDaerahInList(List_Relasi &L , adrDaerah P );
 void DeletePotensiInList(List_Relasi &L , adrPotensi P );
 
+adrDaerah getTerkaya(List_Relasi L , List_Daerah D);
+adrDaerah getTermiskin(List_Relasi L , List_Daerah D);
+int getKekayaan(List_Relasi L , adrDaerah D);
+
 
 
 
